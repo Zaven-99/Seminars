@@ -1,0 +1,113 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  
+  gap: 50px;  
+  margin: 20px;
+}
+
+.seminar-card{
+	width: 300px;
+  height: 100%;
+  background: aliceblue;
+  border-radius: 10px;
+  box-shadow: 1px -1px 5px -1px;
+  padding: 15px;
+  position: relative;
+    
+}
+.item{
+    text-align: start;
+}
+ .img{
+    width: 150px;
+    object-fit: cover;
+    display: flex;
+    justify-content: start;
+    margin-bottom: 15px;
+ }
+.card-btn__block{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    bottom: 5%
+}
+
+.delete-btn{
+    background: #dc5343;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.delete-btn:hover{
+    transform: scale(1.05);
+}
+.edit-btn{
+    background: #c7c52e;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.edit-btn:hover{
+    transform: scale(1.05);
+}
+
+.spinner{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 6;
+  overflow-y: scroll;
+}
+
+
+
+
+@keyframes bounce-in {
+    0%{
+        opacity: 0; 
+    }
+    100% {
+       opacity: 1;
+    }
+}
+@keyframes bounce-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+ 
+ 
+
+
+/*media*/
+@media (max-width: 1200px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+ 
+@media (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+ 
+@media (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}

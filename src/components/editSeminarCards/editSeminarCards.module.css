@@ -1,0 +1,63 @@
+.save{
+    background: #2ebc3a;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.save:hover{
+    transform: scale(1.05);
+}
+.cancel{
+    background: #dc5343;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.cancel:hover{
+    transform: scale(1.05);
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 6;
+  overflow-y: scroll;
+  
+}
+
+.editForm {
+  z-index: 15; 
+  background: white;
+  position: relative;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  animation:bounce-in .5s;
+  margin: 20px;
+}
+
+.modal-content.close {
+  animation: bounce-out .5s forwards;
+}
+.modal-btn__block{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
